@@ -1,6 +1,8 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Hello from './components/Hello'
+import Hello from './components/Hello';
+import Message from './components/Message';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         </a>
       </header> */}
       <Hello></Hello>
+      <Message></Message>
     </div>
   );
 }
