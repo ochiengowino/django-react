@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
-import Hello from './components/Hello';
-import Message from './components/Message';
-
+// import Hello from './components/Hello';
+// import Message from './components/Message';
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -21,8 +21,13 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Hello></Hello>
-      <Message></Message>
+      {/* <Hello></Hello>
+      <Message></Message> */}
+      <Profile fname="Jackson" lname="Kent">
+        <h3>This is the profile of Jackson</h3>
+      </Profile>
+      {/* <Profile fname="Janet" lname="Kylie"></Profile>
+      <Profile fname="John" lname="Kash"></Profile> */}
     </div>
   );
 }
