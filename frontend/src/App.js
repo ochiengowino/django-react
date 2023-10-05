@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 // import Hello from './components/Hello';
-// import Message from './components/Message';
+import Message from './components/Message';
 import Profile from './components/Profile';
 
 function App() {
@@ -21,8 +21,8 @@ function App() {
           Learn React
         </a>
       </header> */}
-      {/* <Hello></Hello>
-      <Message></Message> */}
+      {/* <Hello></Hello> */}
+      <Message messageCont='This is a message'></Message>
       <Profile fname="Jackson" lname="Kent">
         <h3>This is the profile of Jackson</h3>
       </Profile>
