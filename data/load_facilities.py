@@ -10,8 +10,8 @@ healthfacilities_mapping = {
     'name': 'name',
     'healthcare': 'healthcare',
     'amenity': 'amenity',
-    'operator': 'operator',
-    'geom': 'POINT',
+    'operatory': 'operatory',
+    'geom': 'MULTIPOINT',
 }
 
 def import_data(verbose=True):
@@ -23,4 +23,4 @@ def import_data(verbose=True):
         HealthFacilities, file, healthfacilities_mapping, layer=facilities_layer
     )
 
-    facilities_layer_mapping.save(verbose=verbose)
+    facilities_layer_mapping.save(strict=True, verbose=verbose)
