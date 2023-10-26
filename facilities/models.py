@@ -6,7 +6,7 @@ class HealthFacilities(models.Model):
     name = models.CharField(max_length=80)
     healthcare = models.CharField(max_length=80)
     amenity = models.CharField(max_length=80)
-    operator: type = models.CharField(max_length=80)
+    operatory = models.CharField(max_length=80)
     geom = models.PointField(srid=4326)
 
 
@@ -15,6 +15,6 @@ class HealthFacilities(models.Model):
 #     'name': 'name',
 #     'healthcare': 'healthcare',
 #     'amenity': 'amenity',
-#     'operator:type': 'operator:type',
+#     'operatory': 'operatory',
 #     'geom': 'POINT',
 # }
