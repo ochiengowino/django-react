@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "leaflet",
     "rest_framework",
     "rest_framework_gis",
+    "drf_spectacular",
     "corsheaders"
 
 ]
@@ -162,3 +163,13 @@ LEAFLET_CONFIG = {
     #         'maxZoom': 19
     #     })],
     }
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema"
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE":"Kenya Health Facilities",
+    "DESCRIPTION": "Simple API for Kenya Health Facilities",
+    "VERSION": "1.0.0"
+}
