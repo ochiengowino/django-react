@@ -3,8 +3,8 @@ from django.contrib.gis.db import models
 
 # Create your models here.
 class HealthFacilities(models.Model):
-    name = models.CharField(max_length=80, null=True)
-    healthcare = models.CharField(max_length=80, null=True)
+    name = models.CharField(max_length=120, null=True)
+    healthcare = models.CharField(max_length=120, null=True)
     amenity = models.CharField(max_length=80, null=True)
     operatory = models.CharField(max_length=80, null=True)
     geom = models.MultiPointField(srid=4326)
